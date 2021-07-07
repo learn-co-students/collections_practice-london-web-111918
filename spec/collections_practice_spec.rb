@@ -30,6 +30,14 @@ describe 'collections practice' do
     end
   end
 
+  # Advanced Q2
+  describe '#swap_elements_from_to' do
+    it 'takes in three arguments: arry, index, destination_index. It will allow you to specify the index of the element you would like to move to a new index' do
+      names_array = ["blake", "ashley", "scott", "nathan", "joe", "bob"]
+      expect(swap_elements_from_to(names_array, 2, 4)).to eq(["blake", "ashley", "joe", "nathan", "scott", "bob"])
+    end
+  end
+
   # Question 5
   describe '#reverse_array' do
     it 'reverse the order of an array of integers' do
